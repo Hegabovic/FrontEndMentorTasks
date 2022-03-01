@@ -13,12 +13,10 @@
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 325px) {
     .container {
-        max-height: 100vh;
-        min-height: 667px;
-        width: 100%;
-        min-width: 375px;
+        height: 100vh;
+        width: 100%;;
         background-color: rgb(213, 225, 239);
         display: flex;
         flex-direction: column;
@@ -58,12 +56,10 @@
     }
 
     .QR_front_bk p:nth-child(2) {
-
         text-align: center;
         color: hsl(220, 15%, 55%);
         font-size: 15px;
         font-family: 'Outfit', sans-serif;
         font-weight: 400;
-
     }
 }
