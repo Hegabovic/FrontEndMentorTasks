@@ -1,0 +1,206 @@
+/*
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+:root {
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --Cyan: hsl(178, 100%, 50%);
+    --SoftBlue: hsl(215, 51%, 70%);
+    --softGray: hsl(214, 22%, 52%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media  screen and (min-width: 300px) {
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-color: var(--mainBG);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card {
+        height: 450px;
+        width: 280px;
+        background-color: var(--cardBG);
+        border-radius: 20px;
+    }
+
+.imgCont{
+    position:relative;
+}
+    #equilibrium {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        /*transition: .5s ease;*/
+    }
+
+    #eye {
+        width:255px;
+        height: 255px;
+        border-radius: 20px;
+        transition: .5s ease;
+        padding: 90px;
+        opacity: 0;
+        background-color: var(--Cyan);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        justify-content:center;
+
+    }
+    .imgCont:hover #equilibrium {
+        opacity: .3;
+    }
+    .imgCont:hover #eye {
+        opacity: .5;
+
+        cursor: pointer;
+
+    }
+
+    .subCard {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+.shadow1{
+    box-shadow: 0 0 70px 20px var(--cardBG),0 0 10px 20px var(--mainBG);
+}
+    .subCard h1 {
+        font-size: 18px;
+        color: var(--whiteColor);
+        padding: 0 20px 10px 20px;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .subCard h1:hover {
+        color: var(--Cyan);
+        cursor: pointer;
+    }
+
+    .subCard p {
+        color: var(--softGray);
+        padding-left: 20px;
+        padding-bottom: 17px;
+        font-size: 15px;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .eth1 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding-left: 18px;
+        font-weight: 200;
+    }
+
+    .eth1 img {
+        position: absolute;
+        bottom: 1px;
+        left: 3px;
+    }
+
+    .eth1 p {
+        color: var(--Cyan);
+        font-weight: 200;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .ethSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    #clock {
+        color: var(--SoftBlue);
+        padding-right: 20px;
+        padding-top: 2px;
+        font-weight: 200;
+        font-family: 'Outfit', sans-serif;
+        font-size: 13px;
+    }
+
+    img {
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    hr {
+        margin: 0 20px 0 20px;
+        border: 1px solid var(--line);
+        background-color: var(--line);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        font-size: 12px;
+        font-family: 'Outfit', sans-serif;
+        color: var(--softGray);
+        font-weight: 600;
+        position: relative;
+    }
+
+    .footer p {
+        padding-left: 60px;
+        padding-top: 5px;
+    }
+
+    span {
+        color: var(--whiteColor);
+    }
+
+    span:hover {
+        color: var(--Cyan);
+        cursor: pointer;
+    }
+
+    #person {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 7px;
+        left: 20px;
+    }
+
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
